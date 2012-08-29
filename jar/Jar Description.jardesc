@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="HMH Library/jar/Library.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/HMH Library/jar/Jar Description.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/HMH Library/jar/Manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <folder path="/HMH Library/res"/>
+        <folder path="/HMH Library/doc"/>
+        <javaElement handleIdentifier="=HMH Library/gen"/>
+        <file path="/HMH Library/build.xml"/>
+        <javaElement handleIdentifier="=HMH Library/src"/>
+        <file path="/HMH Library/proguard.cfg"/>
+        <file path="/HMH Library/.classpath"/>
+        <folder path="/HMH Library/jar"/>
+        <folder path="/HMH Library/assets"/>
+        <file path="/HMH Library/AndroidManifest.xml"/>
+        <file path="/HMH Library/project.properties"/>
+        <file path="/HMH Library/.project"/>
+        <folder path="/HMH Library/bin"/>
+    </selectedElements>
+</jardesc>
