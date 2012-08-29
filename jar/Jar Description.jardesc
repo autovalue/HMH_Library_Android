@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="HMH Library (Java)/jar/Library.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/HMH Library (Java)/jar/Jar Description.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/HMH Library (Java)/jar/Manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/HMH Library (Java)/.project"/>
+        <folder path="/HMH Library (Java)/doc"/>
+        <file path="/HMH Library (Java)/.classpath"/>
+        <javaElement handleIdentifier="=HMH Library \(Java)/src"/>
+        <folder path="/HMH Library (Java)/jar"/>
+    </selectedElements>
+</jardesc>
