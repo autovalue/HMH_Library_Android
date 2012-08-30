@@ -1,0 +1,9 @@
+This is my Java Library, but with added Classes for Android-use. Documentation can be found in "doc". Sources are found in "src".
+
+To add this Library to your Android project (in Eclipse) follow these steps:
+	1. Right-click the project.
+	2. Click "Properties"
+	3. On the side click "Android"
+	4. Scroll down until you see the "Library" section
+	5. Click "Add" and add this project.
+	6. Close all the Windows you opened. :)
