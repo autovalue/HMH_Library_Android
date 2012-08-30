@@ -14,7 +14,7 @@
         <file path="/HMH Library (Java)/.project"/>
         <folder path="/HMH Library (Java)/doc"/>
         <file path="/HMH Library (Java)/.classpath"/>
-        <javaElement handleIdentifier="=HMH Library \(Java)/src"/>
         <folder path="/HMH Library (Java)/jar"/>
+        <javaElement handleIdentifier="=HMH Library \(Java)/src"/>
     </selectedElements>
 </jardesc>
