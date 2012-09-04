@@ -58,17 +58,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int ic_action_share=0x7f020007;
         public static int ic_home=0x7f020008;
         public static int ic_launcher=0x7f020009;
-        public static int ic_menu_down=0x7f02000a;
-        public static int ic_menu_faves=0x7f02000b;
-        public static int ic_menu_help=0x7f02000c;
-        public static int ic_menu_name=0x7f02000d;
-        public static int ic_menu_search=0x7f02000e;
-        public static int ic_menu_settings=0x7f02000f;
-        public static int ic_menu_share=0x7f020010;
-        public static int ic_menu_source=0x7f020011;
-        public static int ic_menu_src=0x7f020012;
-        public static int ic_menu_up=0x7f020013;
-        public static int ico=0x7f020014;
+        public static int ic_menu_add=0x7f02000a;
+        public static int ic_menu_down=0x7f02000b;
+        public static int ic_menu_faves=0x7f02000c;
+        public static int ic_menu_help=0x7f02000d;
+        public static int ic_menu_name=0x7f02000e;
+        public static int ic_menu_search=0x7f02000f;
+        public static int ic_menu_settings=0x7f020010;
+        public static int ic_menu_share=0x7f020011;
+        public static int ic_menu_source=0x7f020012;
+        public static int ic_menu_src=0x7f020013;
+        public static int ic_menu_up=0x7f020014;
+        public static int ico=0x7f020015;
     }
     public static final class id {
         public static int actionbar_compat=0x7f070000;

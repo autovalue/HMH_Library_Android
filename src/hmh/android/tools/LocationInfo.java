@@ -15,8 +15,9 @@ import android.net.Uri;
  * Combines android.location.Location and android.location.Address
  * 
  * @author Habeeb Hooshmand
- * 
+ * @deprecated It stopped Working
  */
+@Deprecated
 public class LocationInfo {
 
     private String Line = null;
