@@ -21,7 +21,7 @@ import android.widget.AdapterView.OnItemLongClickListener;
  */
 public class AppInfo {
     private Intent intent;
-    public Drawable icon;
+    private Drawable icon;
     private CharSequence name;
     private String pack;
 
@@ -63,7 +63,15 @@ public class AppInfo {
 	return i;
     }
 
-    public static class OpenOnClickListener implements OnItemClickListener {
+    public Drawable getIcon() {
+		return icon;
+	}
+
+	public void setIcon(Drawable icon) {
+		this.icon = icon;
+	}
+
+	public static class OpenOnClickListener implements OnItemClickListener {
 	private final Context classContext;
 	private final List<AppInfo> list;
 

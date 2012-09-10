@@ -78,7 +78,7 @@ public class AppManager {
 		    info.activityInfo.name), Intent.FLAG_ACTIVITY_NEW_TASK
 		    | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
 
-	    application.icon = info.activityInfo.loadIcon(packman);
+	    application.setIcon(info.activityInfo.loadIcon(packman));
 	}
 
 	return list;
