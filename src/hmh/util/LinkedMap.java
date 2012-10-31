@@ -3,13 +3,14 @@
  */
 package hmh.util;
 
+import hmh.util.LinkedHashSet;
+
 import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -18,21 +19,21 @@ import java.util.Set;
  * @author Habeeb Hooshmand
  * 
  */
-public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
+public class LinkedMap<K, V> implements Iterable<V>, Map<K, V>, AbstractMap<K, V>  {
     private List<K> keys;
     private List<V> values;
 
     public LinkedMap() {
-	keys = new ArrayList<K>();
-	values = new ArrayList<V>();
+		keys = new ArrayList<K>();
+		values = new ArrayList<V>();
     }
 
     @Override
     public V put(K key, V value) {
-	this.keys.add(key);
-	this.values.add(value);
+		this.keys.add(key);
+		this.values.add(value);
 
-	return value;
+		return value;
     }
 
     /**
@@ -43,14 +44,14 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @param value
      */
     public void put(int index, K key, V value) {
-	this.keys.add(index, key);
-	this.values.add(index, value);
+		this.keys.add(index, key);
+		this.values.add(index, value);
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public V get(Object key) {
-	return getValue(indexOfKey((K) key));
+		return getValue(indexOfKey((K) key));
     }
 
     /**
@@ -60,10 +61,10 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @return The HashMap of the Mapping
      */
     public HashMap<K, V> getWholeAsMap(int index) {
-	HashMap<K, V> map = new HashMap<K, V>();
-	map.put(this.getKey(index), this.getValue(index));
+		HashMap<K, V> map = new HashMap<K, V>();
+		map.put(this.getKey(index), this.getValue(index));
 
-	return map;
+		return map;
     }
 
     /**
@@ -73,19 +74,19 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @return
      */
     public V get(int index) {
-	return getValue(index);
+		return getValue(index);
     }
 
     private K getKey(int index) {
-	return keys.get(index);
+		return keys.get(index);
     }
 
     private V getValue(int index) {
-	return this.values.get(index);
+		return this.values.get(index);
     }
 
     private Integer indexOfKey(K key) {
-	return this.keys.indexOf(key);
+		return this.keys.indexOf(key);
     }
 
     /**
@@ -95,7 +96,7 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @return The value's position.
      */
     public Integer indexOf(V value) {
-	return this.values.indexOf(value);
+		return this.values.indexOf(value);
     }
 
     /**
@@ -104,18 +105,18 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @param index
      */
     public void remove(int index) {
-	this.keys.remove(index);
-	this.values.remove(index);
+		this.keys.remove(index);
+		this.values.remove(index);
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public V remove(Object key) {
-	V val = get(key);
+		V val = get(key);
 
-	remove(indexOfKey((K) key));
+		remove(indexOfKey((K) key));
 
-	return val;
+		return val;
     }
 
     /**
@@ -124,9 +125,9 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @param indexes
      */
     public void remove(int... indexes) {
-	for (int item : indexes) {
-	    remove(item);
-	}
+		for (int item : indexes) {
+	    	remove(item);
+		}
     }
 
     /**
@@ -136,14 +137,14 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @param count
      */
     public void remove(int start, int count) {
-	for (int i = start; i < (start + count); i++) {
-	    remove(i);
-	}
+		for (int i = start; i < (start + count); i++) {
+		    remove(i);
+		}
     }
 
     @Override
     public int size() {
-	return this.keys.size();
+		return this.keys.size();
     }
 
     /*
@@ -152,8 +153,8 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      * @see java.lang.Iterable#iterator()
      */
     @Override
-    public Iterator<V> iterator() {
-	return values.iterator();
+   	public Iterator<V> iterator() {
+		return values.iterator();
     }
 
     /*
@@ -163,8 +164,8 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public void clear() {
-	this.keys.clear();
-	this.values.clear();
+		this.keys.clear();
+		this.values.clear();
     }
 
     /*
@@ -174,11 +175,11 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public boolean containsKey(Object key) {
-	if (this.keys.contains(key)) {
-	    return true;
-	} else {
-	    return false;
-	}
+		if (this.keys.contains(key)) {
+		    return true;
+		} else {
+		    return false;
+		}
     }
 
     /*
@@ -188,11 +189,11 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public boolean containsValue(Object value) {
-	if (this.values.contains(value)) {
-	    return true;
-	} else {
-	    return false;
-	}
+		if (this.values.contains(value)) {
+		    return true;
+		} else {
+		    return false;
+		}
     }
 
     /*
@@ -202,14 +203,13 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public Set<Entry<K, V>> entrySet() {
-	Set<Entry<K, V>> set = new HashSet<Entry<K, V>>();
+		Set<Entry<K, V>> set = new HashSet<Entry<K, V>>();
 
-	for (int i = 0; i < size(); i++) {
-	    Entry<K, V> entry = new AbstractMap.SimpleEntry<K, V>(getKey(i),
-		    get(i));
+		for (int i = 0; i < size(); i++) {
+	    	Entry<K, V> entry = new AbstractMap.SimpleEntry<K, V>(getKey(i),
+			    get(i));
 
-	    set.add(entry);
-
+	    	set.add(entry);
 	}
 
 	return set;
@@ -222,11 +222,11 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public boolean isEmpty() {
-	if (keys.isEmpty() && values.isEmpty()) {
-	    return true;
-	} else {
-	    return false;
-	}
+		if (keys.isEmpty() && values.isEmpty()) {
+		    return true;
+		} else {
+	   		return false;
+		}
     }
 
     /*
@@ -236,11 +236,11 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public Set<K> keySet() {
-	Set<K> set = new HashSet<K>();
-	for (K item : keys) {
-	    set.add(item);
-	}
-	return set;
+		Set<K> set = new HashSet<K>();
+		for (K item : keys) {
+		    set.add(item);
+		}
+		return set;
     }
 
     /*
@@ -250,7 +250,7 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public Collection<V> values() {
-	return values;
+		return values;
     }
 
     /*
@@ -260,13 +260,12 @@ public class LinkedMap<K, V> implements Iterable<V>, Map<K, V> {
      */
     @Override
     public void putAll(Map<? extends K, ? extends V> arg0) {
+		LinkedHashSet<K> keySet = new LinkedHashSet<K>(arg0.keySet());
 
-	LinkedHashSet<K> keySet = new LinkedHashSet<K>(arg0.keySet());
+		this.values.addAll(arg0.values());
 
-	this.values.addAll(arg0.values());
-
-	for (K item : keySet) {
-	    this.keys.add(item);
-	}
+		for (K item : keySet) {
+		    this.keys.add(item);
+		}
     }
 }
