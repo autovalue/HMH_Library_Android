@@ -63,7 +63,15 @@ public class AppInfo {
 	return i;
     }
 
-    public static class OpenOnClickListener implements OnItemClickListener {
+    public Drawable getIcon() {
+		return icon;
+	}
+
+	public void setIcon(Drawable icon) {
+		this.icon = icon;
+	}
+
+	public static class OpenOnClickListener implements OnItemClickListener {
 	private final Context classContext;
 	private final List<AppInfo> list;
 
