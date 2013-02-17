@@ -54,7 +54,7 @@ public class AppInfoAdapter extends ArrayAdapter<AppInfo> {
 	ImageView image = (ImageView) convertView.findViewById(R.id.icon);
 	TextView title = (TextView) convertView.findViewById(R.id.name);
 
-	Drawable icon = info.icon;
+	Drawable icon = info.getIcon();
 	String name = info.getName().toString();
 
 	title.setText(name);

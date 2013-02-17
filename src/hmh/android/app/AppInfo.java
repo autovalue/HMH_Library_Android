@@ -21,7 +21,7 @@ import android.widget.AdapterView.OnItemLongClickListener;
  */
 public class AppInfo {
     private Intent intent;
-    public Drawable icon;
+    private Drawable icon;
     private CharSequence name;
     private String pack;
 
@@ -37,14 +37,14 @@ public class AppInfo {
 	return intent;
     }
 
-    public void setActivity(ComponentName cn, Integer flags) {
+    public void setActivity(ComponentName cn, int flags) {
 	intent = new Intent(Intent.ACTION_MAIN);
 	intent.addCategory(Intent.CATEGORY_LAUNCHER);
 	intent.setComponent(cn);
 	intent.setFlags(flags);
     }
 
-    public void setActivity(Intent i) {
+    public void setIntent(Intent i) {
 	intent = i;
     }
 
@@ -74,7 +74,6 @@ public class AppInfo {
 
 	/*
 	 * (non-Javadoc)
-	 * 
 	 * @see
 	 * android.widget.AdapterView.OnItemClickListener#onItemClick(android
 	 * .widget.AdapterView, android.view.View, int, long)
@@ -114,6 +113,14 @@ public class AppInfo {
 	    return true;
 	}
 
+    }
+
+    public Drawable getIcon() {
+        return icon;
+    }
+
+    public void setIcon(Drawable icon) {
+        this.icon = icon;
     }
 
 }

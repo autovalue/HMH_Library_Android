@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 hmh.android
 hmh.android.adapter
 hmh.android.app
@@ -14,11 +15,16 @@ hmh.android.widget.swipeview
 hmh.deprecated
 hmh.deprecated.lang
 hmh.deprecated.util
+=======
+>>>>>>> 711f638914a92ba14effa1a4aa47050f353af15a
 hmh.fun
 hmh.io
 hmh.lang
 hmh.library
 hmh.util
+<<<<<<< HEAD
 hmh.util.annotation
 hmh.util.test
+=======
+>>>>>>> 711f638914a92ba14effa1a4aa47050f353af15a
 hmh.xml

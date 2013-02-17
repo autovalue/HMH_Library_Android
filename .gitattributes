@@ -9,6 +9,13 @@
 *.fsproj merge=union
 *.dbproj merge=union
 
+<<<<<<< HEAD
+=======
+# Java
+*.java diff=java
+*.class diff=java
+
+>>>>>>> 711f638914a92ba14effa1a4aa47050f353af15a
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain

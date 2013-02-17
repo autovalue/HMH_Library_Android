@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
 <jardesc>
+<<<<<<< HEAD
     <jar path="HMH Library/jar/Library.jar"/>
     <options buildIfNeeded="true" compress="true" descriptionLocation="/HMH Library/jar/Jar Description.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>
     <manifest generateManifest="false" manifestLocation="/HMH Library/jar/Manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+=======
+    <jar path="HMH Library (Java)/jar/Library.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/HMH Library (Java)/jar/Jar Description.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/HMH Library (Java)/jar/Manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+>>>>>>> 711f638914a92ba14effa1a4aa47050f353af15a
         <sealing sealJar="true">
             <packagesToSeal/>
             <packagesToUnSeal/>
         </sealing>
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+<<<<<<< HEAD
         <folder path="/HMH Library/res"/>
         <folder path="/HMH Library/doc"/>
         <javaElement handleIdentifier="=HMH Library/gen"/>
@@ -24,5 +33,12 @@
         <file path="/HMH Library/project.properties"/>
         <file path="/HMH Library/.project"/>
         <folder path="/HMH Library/bin"/>
+=======
+        <file path="/HMH Library (Java)/.project"/>
+        <folder path="/HMH Library (Java)/doc"/>
+        <file path="/HMH Library (Java)/.classpath"/>
+        <folder path="/HMH Library (Java)/jar"/>
+        <javaElement handleIdentifier="=HMH Library \(Java)/src"/>
+>>>>>>> 711f638914a92ba14effa1a4aa47050f353af15a
     </selectedElements>
 </jardesc>
